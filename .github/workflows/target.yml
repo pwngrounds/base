@@ -8,4 +8,4 @@ jobs:
     steps:
       - shell: bash
         run: |
-          echo ${{ secrets.access-token }}
+          echo ${{ vars.username }}
