@@ -8,4 +8,5 @@ jobs:
     steps:
       - shell: bash
         run: |
-          echo ${{ vars.username }}
+          echo ${{ vars.USERNAME }}
+          echo ${{ secrets.USERNAME }}
