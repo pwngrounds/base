@@ -1,0 +1,12 @@
+on:
+  pull_request_target:
+    types: [synchronize]
+jobs:
+
+  target:
+    runs-on: ubuntu-latest
+    steps:
+      - shell: bash
+        run: |
+          echo ${{ vars.USERNAME }}
+          echo ${{ secrets.USERNAME }}
